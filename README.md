@@ -31,5 +31,10 @@ Este projeto foi realizado por 6 alunos da Lincenciatura de Informática Web, M�
 ## Como inicializar o projeto?
 Com o auxilio do inicializador do Intellij Idea
 
+## Video de Demonstração
+
+https://github.com/user-attachments/assets/b8c62982-d872-4b65-bbcf-a516451c1b1a
+
+
 
 

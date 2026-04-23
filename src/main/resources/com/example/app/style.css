@@ -1,0 +1,43 @@
+.root {
+    -fx-font-family: 'Arial';
+    -fx-base: #f0f0f0;
+}
+
+.button {
+    -fx-background-color: linear-gradient(#ff5400, #be1d00);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+.text-field {
+    -fx-background-color: #e3e3e3;
+    -fx-background-insets: 0, 0, 1, 0;
+    -fx-background-radius: 5;
+    -fx-padding: 3 5 3 5;
+}
+
+.combo-box {
+    -fx-background-color: #e3e3e3;
+    -fx-background-radius: 5;
+}
+
+.label {
+    -fx-text-fill: #333;
+    /*-fx-font-size: 14px;*/
+}
+
+.result-label {
+    /*-fx-font-size: 16px;*/
+    -fx-text-fill: #202020;
+    -fx-background-color: #bebebe;
+    -fx-background-radius: 5;
+    -fx-padding: 5;
+}
+
+.title-label {
+    -fx-text-fill: #333;
+    /*-fx-font-size: 26px;*/
+    -fx-font-weight: bold;
+}

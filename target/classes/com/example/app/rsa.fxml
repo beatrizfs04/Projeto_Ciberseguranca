@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="308.0" prefWidth="554.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.app.rsaController">
+    <children>
+        <Label layoutX="95.0" layoutY="139.0" text="Nome do Arquivo:" />
+        <TextField fx:id="filenameTextField" layoutX="231.0" layoutY="136.0" prefWidth="200" />
+        <Label layoutX="95.0" layoutY="180.0" text="Diretório de Saída:" />
+        <TextField fx:id="directoryTextField" editable="false" layoutX="231.0" layoutY="176.0" prefWidth="200" />
+        <Button layoutX="441.0" layoutY="176.0" mnemonicParsing="false" onAction="#onBrowseButtonClick" text="Browse" />
+        <Button layoutX="212.0" layoutY="231.0" mnemonicParsing="false" onAction="#onGenerateRSAButtonClick" text="Gerar Chaves RSA" />
+        <Label layoutX="120.0" layoutY="54.0" prefHeight="31.0" prefWidth="303.0" styleClass="title-label" text="Gerador de chaves RSA">
+            <font>
+                <Font name="Georgia Bold" size="26.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

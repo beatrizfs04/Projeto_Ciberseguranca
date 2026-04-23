@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefWidth="512.0" spacing="30.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.app.verificarController">
+   <Label prefHeight="31.0" prefWidth="427.0" styleClass="title-label" text="Verificação de assinaturas digitais" textAlignment="CENTER">
+      <font>
+         <Font name="Georgia Bold" size="26.0" />
+      </font>
+   </Label>
+    <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="204.0" minWidth="10.0" prefWidth="142.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="287.0" minWidth="10.0" prefWidth="216.0" />
+            <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="287.0" minWidth="10.0" prefWidth="94.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+        <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" ellipsisString="" text="Ficheiro de entrada:" textAlignment="CENTER">
+                <padding>
+                    <Insets left="10.0" />
+                </padding>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" ellipsisString="" text="Chave pública:" textAlignment="CENTER" GridPane.rowIndex="1">
+                <padding>
+                    <Insets left="10.0" />
+                </padding>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" ellipsisString="" text="Assinatura:" textAlignment="CENTER" GridPane.rowIndex="2">
+                <padding>
+                    <Insets left="10.0" />
+                </padding>
+            </Label>
+            <TextField fx:id="inputField" editable="false" GridPane.columnIndex="1" />
+            <TextField fx:id="signatureField" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="publicKeyField" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="searchInputButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#browseInputFile" text="Procurar" userData="inputField" GridPane.columnIndex="2">
+                <GridPane.margin>
+                    <Insets />
+                </GridPane.margin>
+            </Button>
+            <Button fx:id="searchSignatureButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#browseSignature" prefHeight="25.0" prefWidth="66.0" text="Verificar" textAlignment="CENTER" userData="signatureField" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                <GridPane.margin>
+                    <Insets />
+                </GridPane.margin>
+            </Button>
+            <Button fx:id="searchPublicKeyButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#browsePublicKey" text="Procurar" textAlignment="CENTER" userData="publicKeyField" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                <!--<Button fx:id="searchPublicKeyButton" alignment="CENTER" mnemonicParsing="false" onAction="#browseFile" text="Procurar..." userData="publicKeyField" GridPane.columnIndex="2" GridPane.rowIndex="1">-->
+                <GridPane.margin>
+                    <Insets />
+                </GridPane.margin>
+            </Button>
+        </children>
+    </GridPane>
+    <Label fx:id="infoLabel" text=" " textFill="RED" wrapText="true" />
+    <padding>
+        <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+    </padding>
+</VBox>

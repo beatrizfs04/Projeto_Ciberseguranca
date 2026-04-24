@@ -2,8 +2,8 @@
 ## O que foi feito?
 O objetivo principal deste projeto foi construir uma aplicação que sirvi-se como interface grafica para o programa de linha de comandos openssl. 
 O trabalho pressuponha que a parte da programação seria sobretudo focada na criação de um ambiente gráfico integrado e fácil de usar que permita a um utilizador escolher 
-gradualmente o que quer fazer com a ferramenta (ex., se quer cifrar um ficheiro, criar chaves de cifra RSA, assinar digitalmente um documento), para depois configurar parametros
-específicos da funcionalidade escolhida (como o nome do ficheiro a cifrar e guardar o criptograma, a chave de cifra, etc.). 
+gradualmente o que quer fazer com a ferramenta (ex: se quer cifrar um ficheiro, criar chaves de cifra RSA, assinar digitalmente um documento), para depois configurar parametros
+específicos da funcionalidade escolhida (como o nome do ficheiro a cifrar e guardar o criptograma, a chave de cifra, entre outras). 
 
 ### Funcionalidades:
 - A aplicação deve começar com um ecra inicial onde mostra todas as funcionalidades suportadas numa grelha;

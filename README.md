@@ -1,4 +1,4 @@
-# Projeto de Base de Dados
+# Projeto de Cibersegurança
 ## O que foi feito?
 O objetivo principal deste projeto foi construir uma aplicação que sirvi-se como interface grafica para o programa de linha de comandos openssl. 
 O trabalho pressuponha que a parte da programação seria sobretudo focada na criação de um ambiente gráfico integrado e fácil de usar que permita a um utilizador escolher 
